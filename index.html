@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACM WebPage</title>
+</head>
+<body>
+    <section>
+        <div class="bg"></div>
+        <header>
+            <a href="#"  class = "logo"> <img src="/acm logo 2.png" alt=""></a>
+            <ul class="navigation">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="https://uwplatt.campuslabs.com/engage/organization/acm">More...</a></li>
+            </ul>
+        </header>
+        <div class="contenu">
+            <div class="text-boite">
+                <h2>About ACM-Club</h2>
+                <P>ACM means "Association for Computing Machinery". This club was create to gain professional experience, meet members in the programming field, and network with companies in the computer industry.</P>
+                <P></P>
+                <P></P>
+                <h3>Contact Information</h3>
+                <P>Address :  217 Ullrich Hall, 1 UNIVERSITY PLAZA, PLATTEVILLE, WI 53818, United States</P>
+                <P>///Contact Email : hueninkm@uwplatt.edu /// Phone Number : 414-870-2175 ///</P>
+                <p></p>
+            </div>
+            <div class="imgboite">
+                <img src="./acm logo.jpeg" alt="" class="ImgClub">
+            </div>
+        </div>
+        <ul class="tab">
+            <li data-text="1"> <img src="/Techo.png" alt="" onclick="ImageSlider('/Techo.png'); ColorF('Orange')"></li>
+            <li data-text="2"> <img src="/Secure-Data-(lock)2.png" alt=""  onclick="ImageSlider('/Secure-Data-(lock)2.png'); ColorF('#c9275b')"></li>
+            <li data-text="3"> <img src="/Information-Technology-Scientist-PNG.png" alt=""  onclick="ImageSlider('/Information-Technology-Scientist-PNG.png'); ColorF('#6c9330')"></li>
+            <li data-text="4"> <img src="/Tools2.png" alt="" onclick="ImageSlider('/Tools2.png'); ColorF('#b20101')"></li>
+        </ul>
+        <div class="reseaux">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://discord.gg/ek25EsZZRY"><i class="fa-brands fa-discord"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </section>
+
+
+    <script>
+
+        function ImageSlider(image){
+            document.querySelector('.ImgClub').src = image
+        }
+
+        function ColorF(color){
+            document.querySelector('.bg').style.background = color
+        }
+    </script>
+</body>
+</html>
